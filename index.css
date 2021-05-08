@@ -10,6 +10,7 @@ body {
   background: black;
   color: aliceblue;
 }
+
 .homepage {
   height: 100%;
   display: flex;
@@ -21,11 +22,8 @@ body {
 
 
 .content-wrap{
-  overflow: hidden;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-size: 8vh;
+
 }
 
 .fly-in-text{
@@ -35,7 +33,7 @@ body {
 .fly-in-text li{
   display: inline-block;
   margin-right: 20px;
-  font-size: 5em;
+  /* font-size: 5em; */
   color: #fff;
   opacity: 1;
   transition: all 3s ease;
@@ -49,7 +47,7 @@ body {
 .enter-button{
   display: block;
   text-align: center;
-  font-size: 2em;
+  font-size: 3.5vh;
   text-decoration: none;
   color: #9fef00;
   opacity: 1;
