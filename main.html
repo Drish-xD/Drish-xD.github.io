@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="Description" content="Page Description" />
+    <meta http-equiv="Content-Type" content="text/html" ; charset="utf=8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+    <script defer src="script.js"></script>
+
+    <title>Drish | Portfolio</title>
+  </head>
+
+  <body>
+    
+    
+    <!--Navigaition bar-->
+    
+    <section class="nav-bar">
+
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+
+
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#About-me">ABOUT</a></li>
+          <li><a href="#Skills">SKILL</a></li>
+          <li><a href="#Contacts">CONTACT</a></li>
+          <!-- <div class="cursor"></div> -->
+        </ul>
+      </nav>
+
+      <!-- <script>
+        const cursor = document.querySelector(".cursor");
+        document.addEventListener("mousemove", (e) => {
+          cursor.style.left = e.clientX + "px";
+          cursor.style.top = e.clientY + "px";
+        });
+      </script> -->
+
+      <span class="iconify" data-icon="bi:code" data-inline="false"></span>
+    </section>
+
+
+    <!--Main Page-->
+
+
+    <section class="homepage"> 
+      <div class="wrapper">
+        <h1>Welcome to my Website ^_^</h1>
+      </div>
+    </section>
+
+    <!--Text container-->
+
+    <section class="container" >
+      <div class="container-box">
+        <!--Content About me-->
+
+        <div class="about-me" id="About-me">
+          <div class="header">
+            <h1 class="anime1">ABOUT ME</h1>
+          </div>
+          <!--Js animation-->
+
+          <script>
+            var textWrapper = document.querySelector(".anime1");
+            textWrapper.innerHTML = textWrapper.textContent.replace(
+              /\S/g,
+              "<span class='letter'>$&</span>"
+            );
+
+            anime.timeline({ loop: false }).add({
+              targets: ".anime1 .letter",
+              opacity: [0, 1],
+              easing: "easeInOutQuad",
+              duration: 2250,
+              delay: (el, i) => 150 * (i + 1),
+            });
+          </script>
+
+          <div class="about-img">
+            <img src="assets/Code typing.png">
+          </div>
+          <div class="about-txt">
+            <h3>My name is Drish</h3>
+            <p>
+              <br> My name is Wendy Ju, a UIUX designer from Beijing and currently
+              based in New York. I'm majoring in Communication Design at Pratt
+              Institute, Brooklyn, I also have a minor in sustainability.
+              Whether it be user experience, campaign, fictional world, or
+              physical product. Making design meaningful drives me through the
+              process of creation, and I'm always open to learning about new
+              technologies, methods, ideas, etc. I'm also a lover of movies,
+              photography, interactive exhibition, and CAT!rently based in New
+              York. I'm majoring in Communication Design at Pratt Institute,
+              Brooklyn, I also have a minor in sustainability. Whether it be
+              user experience, campaign, fictional world, or physical product.
+              Making design meaningful drives me through the process of
+              creation, and I'm always open to learning about new technologies,
+              methods, ideas, etc. I'm also a lover of movies, photography,
+              interactive exhibition, and CAT!
+            </p>
+          </div>
+        </div>
+
+        <!--Skills-->
+
+        <div class="skill" id="Skills">
+          <h2 class="anime2">Skills</h2>
+
+          <!--Js animation-->
+
+          
+          <script>
+            var textWrapper = document.querySelector(".anime2");
+            textWrapper.innerHTML = textWrapper.textContent.replace(
+              /\S/g,
+              "<span class='letter'>$&</span>"
+            );
+
+            anime.timeline({ loop: false }).add({
+              targets: ".anime2 .letter",
+              opacity: [0, 1],
+              easing: "easeInOutQuad",
+              duration: 2250,
+              delay: (el, i) => 150 * (i + 1),
+            });
+          </script>
+
+          <div class="skill-bars">
+            <div class="bar">
+              <div class="info">
+                <span>Python</span>
+              </div>
+              <div class="progress-line Python">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>HTML & CSS</span>
+              </div>
+              <div class="progress-line Html-css">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>Linux</span>
+              </div>
+              <div class="progress-line Linux">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>C/C++</span>
+              </div>
+              <div class="progress-line C">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>MySQL</span>
+              </div>
+              <div class="progress-line mysql">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="projects" id="projects">
+          <div class="projects-list">
+            <h1>Projects</h1>
+
+
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Contact me -->
+
+    <div class="contacts" id="Contacts">
+      <p><h5>Interested? Connect with me!</h5>      
+        <div class="icon-soc"><a
+          href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCKCGCvSJJCgqKDNCCZsQNHdNrkxDttBlBjZVWrCVWGthpzfdMxjvQvLrpMVNXbNrkbvfklB"
+          target="_blank"
+          ><span data-text="drish262@gmail.com" class="tooltip"><span
+            class="iconify"
+            data-icon="simple-icons:gmail"
+            data-inline="true"
+          ></span
+          ></span></a></div>
+
+        <div class="icon-soc"><a href="https://www.linkedin.com/in/drish-338233207/" target="_blank"
+          ><span data-text="Drish_xD" class="tooltip"><span
+            class="iconify"
+            data-icon="ri:linkedin-fill"
+            data-inline="true"
+          ></span
+        ></span></a></div>
+
+        <div class="icon-soc"><a href="https://twitter.com/Drish_xD" target="_blank"
+          ><span data-text="Drish_xD" class="tooltip"><span
+            class="iconify"
+            data-icon="akar-icons:twitter-fill"
+            data-inline="true"
+          ></span
+        ></span></a></div>
+      </p>
+    </div>
+    
+    <footer class="foot">
+      &copy; Copyrights 2021 by Drish. All Rights Reserved.
+    </footer>
+    <script color='255,255,255' opacity='1' count='300' src="canvas-nest.js"></script>
+  </body>
+</html>
+
+

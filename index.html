@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="Description" content="Page Description" />
+    <meta http-equiv="Content-Type" content="text/html" ; charset="utf=8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="script.js"></script>
+    <title>Drish</title>
+</head>
+<body>
+  <section class="homepage"> 
+  
+    <div class="welcome-section content-hidden">
+      <div class="content-wrap">
+        <ul class="fly-in-text">
+          <li>H</li>
+          <li>E</li>
+          <li>L</li>
+          <li>L</li>
+          <li>O</li>
+          <li>&nbsp &nbsp</li>
+          <li>T</li>
+          <li>H</li>
+          <li>E</li>
+          <li>R</li>
+          <li>E</li>
+          <li>!</li>
+        </ul>
+        <a href="main.html" class="enter-button">ENTER</a>
+      </div>
+    </div>
+  
+    <script>
+    $(function(){
+      var welcomeSection = $('.welcome-section'),
+        enterButton = welcomeSection.find('.enter-button');
+  
+        setTimeout(function(){
+          welcomeSection.removeClass('content-hidden');}, 800);
+          
+          // enterButton.on('click', function(e) {
+          //   e.preventDefault();
+          //   welcomeSection.addClass('content-hidden').fadeOut();
+          // });
+      
+    });
+    </script>
+     <script color='159, 239, 0	' opacity='1' count='300' src="canvas-nest.js"></script>
+</body>
+</html>
