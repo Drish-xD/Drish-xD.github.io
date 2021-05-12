@@ -6,11 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
-    <script defer src="script.js"></script>
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Drish | Portfolio</title>
   </head>
 
@@ -19,7 +16,7 @@
     
     <!--Navigaition bar-->
     
-    <section class="nav-bar">
+    <!-- <section class="nav-bar">
 
       <div class="spinner">
         <div class="bounce1"></div>
@@ -30,30 +27,44 @@
 
       <nav>
         <ul>
-          <li><a href="#">HOME</a></li>
+          <li><a href="#Homepage">HOME</a></li>
           <li><a href="#About-me">ABOUT</a></li>
           <li><a href="#Skills">SKILL</a></li>
           <li><a href="#Contacts">CONTACT</a></li>
-          <!-- <div class="cursor"></div> -->
         </ul>
       </nav>
-
-      <!-- <script>
-        const cursor = document.querySelector(".cursor");
-        document.addEventListener("mousemove", (e) => {
-          cursor.style.left = e.clientX + "px";
-          cursor.style.top = e.clientY + "px";
-        });
-      </script> -->
-
       <span class="iconify" data-icon="bi:code" data-inline="false"></span>
-    </section>
+    </section> -->
+    
+      <nav class="nav-bar">
+        <div class="menu-icon">
+          <span class="iconify" data-icon="eva:menu-2-fill" data-inline="false"></span>
+        </div>
+
+
+        <div class="spinner">
+              <div class="bounce1"></div>
+              <div class="bounce2"></div>
+              <div class="bounce3"></div>
+        </div>
+    
+
+      <div class="menu">
+            <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Skill</a></li>
+                  <li><a href="#">Contact</a></li>
+            </ul>
+      </div>
+      <span class="iconify code" data-icon="bi:code" data-inline="false"></span>
+      </nav>
 
 
     <!--Main Page-->
 
 
-    <section class="homepage"> 
+    <section class="homepage" id="Homepage"> 
       <div class="wrapper">
         <h1>Welcome to my Website ^_^</h1>
       </div>
@@ -67,32 +78,15 @@
 
         <div class="about-me" id="About-me">
           <div class="header">
-            <h1 class="anime1">ABOUT ME</h1>
+            <h1 data-aos="fade-up-right">ABOUT ME</h1>
           </div>
-          <!--Js animation-->
 
-          <script>
-            var textWrapper = document.querySelector(".anime1");
-            textWrapper.innerHTML = textWrapper.textContent.replace(
-              /\S/g,
-              "<span class='letter'>$&</span>"
-            );
-
-            anime.timeline({ loop: false }).add({
-              targets: ".anime1 .letter",
-              opacity: [0, 1],
-              easing: "easeInOutQuad",
-              duration: 2250,
-              delay: (el, i) => 150 * (i + 1),
-            });
-          </script>
-
-          <div class="about-img">
+          <div data-aos="fade-left" class="about-img">
             <img src="assets/Code typing.png">
           </div>
           <div class="about-txt">
-            <h3>My name is Drish</h3>
-            <p>
+            <h3 data-aos="fade-right">My name is Drish</h3>
+            <p data-aos="zoom-out-up">
               <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum repellat nostrum possimus molestias neque, consectetur harum ullam qui aspernatur esse porro, molestiae iste unde dolor beatae a corporis ratione fugiat rem debitis laborum voluptatibus commodi officiis! Iure expedita ut a aliquam incidunt dignissimos hic excepturi. Aliquam ratione sint enim neque repellendus officia. Tenetur minima vero illo, a libero nostrum dolores totam repellat accusamus, officia molestias, praesentium officiis incidunt eaque magni recusandae corporis? Ea nisi excepturi cum libero, quis animi cumque magnam, totam pariatur maxime, possimus a similique tempore optio voluptatibus saepe. Aliquam vel eaque doloremque ipsam, perferendis vitae atque veniam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quibusdam rem accusamus, error tempore cum commodi culpa et earum sequi in inventore aspernatur sunt. Quam doloribus itaque, tempore corrupti nemo velit tenetur debitis esse perferendis eius. Exercitationem similique fuga iusto porro optio commodi eos nihil. Sunt, vero. Quam, maiores rem!
             </p>
           </div>
@@ -101,26 +95,7 @@
         <!--Skills-->
 
         <div class="skill" id="Skills">
-          <h2 class="anime2">Skills</h2>
-
-          <!--Js animation-->
-
-          
-          <script>
-            var textWrapper = document.querySelector(".anime2");
-            textWrapper.innerHTML = textWrapper.textContent.replace(
-              /\S/g,
-              "<span class='letter'>$&</span>"
-            );
-
-            anime.timeline({ loop: false }).add({
-              targets: ".anime2 .letter",
-              opacity: [0, 1],
-              easing: "easeInOutQuad",
-              duration: 2250,
-              delay: (el, i) => 150 * (i + 1),
-            });
-          </script>
+          <h2 data-aos="fade-up-right">Skills</h2>
 
           <div class="skill-bars">
             <div class="bar">
@@ -169,9 +144,9 @@
         <!-- Projects -->
         <div class="projects" id="projects">
           <div class="projects-list">
-            <h1>Projects</h1>
+            <h1 data-aos="fade-up-right">Projects</h1>
 
-
+            <br><br><br><br><br><br><br><br><br>
 
           </div>
         </div>
@@ -215,7 +190,39 @@
     <footer class="foot">
       &copy; Copyrights 2021 by Drish. All Rights Reserved.
     </footer>
-    <script color='255,255,255' opacity='1' count='300' src="canvas-nest.js"></script>
+
+    <!-- <script color='255,255,255' opacity='1' count='300' src="canvas-nest.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+    <script type="text/javascript">
+    
+    
+    $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('.nav-bar').addClass('black');
+            }
+
+            else {
+                  $('.nav-bar').removeClass('black');
+            }
+      })
+
+      
+   
+
+
+      </script>
+
+
   </body>
 </html>
 
