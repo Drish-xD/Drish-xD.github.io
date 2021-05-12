@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Varela+Round&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Varela+Round&display=swap");
 
 html,
 body {
@@ -10,27 +9,11 @@ body {
   font-family: "Varela Round", sans-serif;
   background-image: url(assets/pattern.png);
   color: aliceblue;
-
 }
 
-.homepage {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.wrapper {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 6vh;
-  letter-spacing: .25em;
-  color: #fff;
-}
 
 /* Navigation bar */
+
 
 nav {
   position: fixed;
@@ -65,7 +48,7 @@ nav ul li a {
   color: #fff;
   font-size: 1.2vw;
   font-weight: 800;
-  letter-spacing: .15rem;
+  letter-spacing: 0.15rem;
 }
 
 .spinner {
@@ -134,6 +117,57 @@ nav ul li a {
   padding: 2vh 1.5vw;
 }
 
+.menu-icon {
+  position: absolute;
+  padding: 5vw;
+  right: 0;
+  display: none;
+}
+
+.wrapper-menu {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 330ms ease-out;
+}
+
+.wrapper-menu.open {
+  transform: rotate(-45deg);
+}
+
+.line-menu {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 100%;
+  height: 4px;
+}
+
+.line-menu.half {
+  width: 50%;
+}
+
+.line-menu.start {
+  transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  transform-origin: right;
+}
+
+.open .line-menu.start {
+  transform: rotate(-90deg) translateX(1.5px);
+}
+
+.line-menu.end {
+  align-self: flex-end;
+  transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  transform-origin: left;
+}
+
+.open .line-menu.end {
+  transform: rotate(-90deg) translateX(-3px);
+}
+
 .menu-bar {
   height: 9vh;
   width: 100%;
@@ -143,17 +177,30 @@ nav ul li a {
   display: none;
 }
 
-.menu-icon{
-  position: absolute;
-  padding-top: 4vw;
-  padding-right: 5vw;
-  padding-left: 5vw;
-  right: 0;
-  display: none;
 
+/* Homepage */
+
+
+.homepage {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6vh;
+  letter-spacing: 0.25em;
+  color: #fff;
+}
+
+
 /*main container*/
+
 
 .container {
   display: flex;
@@ -166,12 +213,15 @@ nav ul li a {
   height: fit-content;
 }
 
+
 /*about me*/
+
+
 .about-me {
   padding-top: 5vh;
 }
 
-.header h1{
+.header h1 {
   text-align: left;
   color: #7e57c2;
   font-size: 70px;
@@ -204,7 +254,9 @@ nav ul li a {
   line-height: 12mm;
 }
 
+
 /*Skills*/
+
 
 .skill {
   padding-top: 10vh;
@@ -255,6 +307,9 @@ nav ul li a {
   animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
+.skill-bars .bar .progress-line[data-scroll="in"] {
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
 
 @keyframes animate {
   100% {
@@ -268,8 +323,12 @@ nav ul li a {
   transform: scaleX(0);
   transform-origin: center;
   background: linear-gradient(to right, #7e57c2, #9879ce);
-  animation: animate 1.2s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
+
+.bar .progress-line span[data-scroll="in"] {
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
 .bar .progress-line.Python span {
   width: 80%;
 }
@@ -299,6 +358,7 @@ nav ul li a {
   opacity: 0;
   animation: showText2 0.5s 1.5s linear forwards;
 }
+
 .progress-line span::after {
   position: absolute;
   top: -28px;
@@ -312,6 +372,7 @@ nav ul li a {
   opacity: 0;
   animation: showText2 0.5s 1.5s linear forwards;
 }
+
 @keyframes showText2 {
   100% {
     opacity: 1;
@@ -334,10 +395,8 @@ nav ul li a {
 }
 
 
-
-
-
 /* Projects */
+
 
 .projects h1 {
   text-align: left;
@@ -348,14 +407,14 @@ nav ul li a {
   margin: 0;
 }
 
-.projects p{
+.projects p {
   font-size: 25px;
   color: #fafafa;
 }
 
 
-
 /*Contact me*/
+
 
 .contacts {
   display: flex;
@@ -397,7 +456,7 @@ nav ul li a {
   width: 200px;
   padding: 10px;
   border-radius: 10px;
-    background: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   text-align: center;
   opacity: 0;
@@ -429,7 +488,9 @@ nav ul li a {
   visibility: visible;
 }
 
+
 /*Footer*/
+
 
 footer {
   display: flex;
@@ -437,56 +498,55 @@ footer {
   background-color: #111111;
   padding: 20px;
   font-family: "Fira Code", monospace;
-
 }
-
 
 
 /* Media Queries */
 
+
 @media screen and (max-width: 786px) {
-  *{
+  * {
     margin: 0;
     padding: 0;
   }
 
-  nav{
+  nav {
     position: fixed;
     width: 100vw;
-  };
+  }
 
   .spinner {
-        position: fixed;
-        top: 0;
+    position: fixed;
+    top: 0;
   }
 
   nav ul {
-        max-height: 0px;
-        background: #000;
+    max-height: 0px;
+    background: #000;
   }
 
   nav.black ul {
-        background: #000;
+    background: #000;
   }
 
   nav ul li a {
     font-size: 4vw;
     font-weight: 800;
-    letter-spacing: .15rem;
+    letter-spacing: 0.15rem;
   }
 
   .showing {
-        max-height: 30em;
+    max-height: 30em;
   }
 
   nav ul li {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 24px;
-        text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px;
+    text-align: center;
   }
 
-  .menu-bar{
+  .menu-bar {
     display: block;
   }
 
@@ -495,10 +555,21 @@ footer {
     font-size: 30px;
   }
 
-  .nav-bar .code{
+  .nav-bar .code {
     display: none;
   }
-
 }
 
 
+/* ScrollOut animations */
+
+
+[data-scroll] {
+  transition: opacity 0.6s;
+}
+[data-scroll="in"] {
+  opacity: 1;
+}
+[data-scroll="out"] {
+  opacity: 0;
+}
