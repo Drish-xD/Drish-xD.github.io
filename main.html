@@ -15,31 +15,13 @@
     
     
     <!--Navigaition bar-->
-    
-    <!-- <section class="nav-bar">
 
-      <div class="spinner">
-        <div class="bounce1"></div>
-        <div class="bounce2"></div>
-        <div class="bounce3"></div>
-      </div>
-
-
-      <nav>
-        <ul>
-          <li><a href="#Homepage">HOME</a></li>
-          <li><a href="#About-me">ABOUT</a></li>
-          <li><a href="#Skills">SKILL</a></li>
-          <li><a href="#Contacts">CONTACT</a></li>
-        </ul>
-      </nav>
-      <span class="iconify" data-icon="bi:code" data-inline="false"></span>
-    </section> -->
-    
       <nav class="nav-bar">
+        <div class="menu-bar">
         <div class="menu-icon">
           <span class="iconify" data-icon="eva:menu-2-fill" data-inline="false"></span>
         </div>
+        </div>  
 
 
         <div class="spinner">
@@ -51,10 +33,10 @@
 
       <div class="menu">
             <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Skill</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="#Homepage">Home</a></li>
+                  <li><a href="#About-me">About</a></li>
+                  <li><a href="#Skills">Skill</a></li>
+                  <li><a href="#Contacts">Contact</a></li>
             </ul>
       </div>
       <span class="iconify code" data-icon="bi:code" data-inline="false"></span>
@@ -70,10 +52,11 @@
       </div>
     </section>
 
-    <!--Text container-->
+    <!--main container-->
 
     <section class="container" >
       <div class="container-box">
+
         <!--Content About me-->
 
         <div class="about-me" id="About-me">
@@ -145,8 +128,7 @@
         <div class="projects" id="projects">
           <div class="projects-list">
             <h1 data-aos="fade-up-right">Projects</h1>
-
-            <br><br><br><br><br><br><br><br><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque atque pariatur blanditiis porro fuga dicta eos perspiciatis soluta, eligendi sunt quasi! Illum voluptatibus, harum quis magnam deleniti in aspernatur sequi. Voluptates nisi sequi accusamus beatae unde atque temporibus. Odio qui dolorem alias eaque nesciunt minus earum officiis ullam. Deserunt, quo.</p>
 
           </div>
         </div>
@@ -191,37 +173,9 @@
       &copy; Copyrights 2021 by Drish. All Rights Reserved.
     </footer>
 
-    <!-- <script color='255,255,255' opacity='1' count='300' src="canvas-nest.js"></script> -->
+    <script color='255,255,255'  pointSize='100' opacity='1' count='200' src="canvas-nest.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
-
-    <script type="text/javascript">
-    
-    
-    $(document).ready(function() {
-            $(".menu-icon").on("click", function() {
-                  $("nav ul").toggleClass("showing");
-            });
-      });
-
-      // Scrolling Effect
-
-      $(window).on("scroll", function() {
-            if($(window).scrollTop()) {
-                  $('.nav-bar').addClass('black');
-            }
-
-            else {
-                  $('.nav-bar').removeClass('black');
-            }
-      })
-
-      
-   
-
-
-      </script>
-
 
   </body>
 </html>

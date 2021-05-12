@@ -5,18 +5,17 @@ html,
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   font-family: "Varela Round", sans-serif;
   background-image: url(assets/pattern.png);
-
   color: aliceblue;
+
 }
+
 .homepage {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -31,18 +30,17 @@ body {
   color: #fff;
 }
 
-
 /* Navigation bar */
 
 nav {
   position: fixed;
-  width: 100%;
-  line-height: 60px;
-  z-index: 10;
+  width: 100vw;
+  line-height: 6vh;
+  z-index: 2;
 }
 
 nav ul {
-  line-height: 60px;
+  line-height: 6vh;
   list-style: none;
   background: rgba(0, 0, 0, 0);
   overflow: hidden;
@@ -59,26 +57,27 @@ nav.black ul {
 
 nav ul li {
   display: inline-block;
-  padding: 16px 80px;
+  padding: 1.8vh 4vw;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 1.2vw;
+  font-weight: 800;
+  letter-spacing: .15rem;
 }
 
 .spinner {
+  top: 0;
   position: fixed;
-  float: left;
-  margin: 16px 46px;
-  width: 100px;
+  padding: 2vh 1.5vw;
 }
 
 .spinner > div {
-  margin-left: 10px;
-  width: 15px;
-  height: 15px;
+  margin-left: 0.5vw;
+  width: 1.5vh;
+  height: 1.5vh;
   border-radius: 100%;
   display: inline-block;
   -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
@@ -130,61 +129,29 @@ nav ul li a {
   right: 0;
   top: 0;
   color: aliceblue;
-  width: 40px;
-  height: 40px;
-  padding: 20px 20px;
+  width: 4vh;
+  height: 4vh;
+  padding: 2vh 1.5vw;
 }
 
-.menu-icon {
-  line-height: 60px;
+.menu-bar {
+  height: 9vh;
   width: 100%;
   background: #000;
-  text-align: right;
   box-sizing: border-box;
-  padding: 15px 24px;
-  cursor: pointer;
   color: #fff;
   display: none;
 }
 
-@media(max-width: 786px) {
+.menu-icon{
+  position: absolute;
+  padding-top: 4vw;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  right: 0;
+  display: none;
 
-  .spinner {
-        position: fixed;
-        top: 0;
-        margin-top: 16px;
-  }
-
-  nav ul {
-        max-height: 0px;
-        background: #000;
-  }
-
-  nav.black ul {
-        background: #000;
-  }
-
-  .showing {
-        max-height: 34em;
-  }
-
-  nav ul li {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 24px;
-        text-align: center;
-  }
-
-  .menu-icon {
-        display: block;
-        font-size: 30px;
-  }
-
-  .nav-bar .code{
-    display: none;
-  }
 }
-
 
 /*main container*/
 
@@ -192,7 +159,6 @@ nav ul li a {
   display: flex;
   justify-content: center;
   z-index: 1;
-
 }
 
 .container-box {
@@ -202,13 +168,13 @@ nav ul li a {
 
 /*about me*/
 .about-me {
-  padding-top: 20px;
+  padding-top: 5vh;
 }
 
-.header {
+.header h1{
   text-align: left;
   color: #7e57c2;
-  font-size: 50px;
+  font-size: 70px;
   letter-spacing: 5mm;
 }
 
@@ -241,7 +207,7 @@ nav ul li a {
 /*Skills*/
 
 .skill {
-  padding-top: 30px;
+  padding-top: 10vh;
 }
 
 .skill h2 {
@@ -249,6 +215,8 @@ nav ul li a {
   font-size: 60px;
   color: #7e57c2;
   letter-spacing: 5mm;
+  padding-bottom: 5vh;
+  margin: 0;
 }
 
 .skill-bars {
@@ -303,19 +271,19 @@ nav ul li a {
   animation: animate 1.2s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 .bar .progress-line.Python span {
-  width: 75%;
+  width: 80%;
 }
 .bar .progress-line.Html-css span {
-  width: 60%;
+  width: 65%;
 }
 .bar .progress-line.Linux span {
-  width: 85%;
+  width: 75%;
 }
 .bar .progress-line.C span {
-  width: 50%;
+  width: 25%;
 }
 .bar .progress-line.mysql span {
-  width: 75%;
+  width: 35%;
 }
 .progress-line span::before {
   position: absolute;
@@ -353,16 +321,16 @@ nav ul li a {
   content: "Intermediate";
 }
 .progress-line.Html-css span::after {
-  content: "60%";
+  content: "Intermediate";
 }
 .progress-line.Linux span::after {
-  content: "85%";
+  content: "Intermediate";
 }
 .progress-line.C span::after {
-  content: "50%";
+  content: "Beginner";
 }
 .progress-line.mysql span::after {
-  content: "75%";
+  content: "Beginner";
 }
 
 
@@ -376,9 +344,14 @@ nav ul li a {
   font-size: 60px;
   color: #7e57c2;
   letter-spacing: 5mm;
+  padding-top: 10vh;
+  margin: 0;
 }
 
-
+.projects p{
+  font-size: 25px;
+  color: #fafafa;
+}
 
 
 
@@ -386,7 +359,7 @@ nav ul li a {
 
 .contacts {
   display: flex;
-  padding-top: 100px;
+  padding-top: 10vh;
   color: aliceblue;
   justify-content: center;
   text-decoration: none;
@@ -466,4 +439,66 @@ footer {
   font-family: "Fira Code", monospace;
 
 }
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 786px) {
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  nav{
+    position: fixed;
+    width: 100vw;
+  };
+
+  .spinner {
+        position: fixed;
+        top: 0;
+  }
+
+  nav ul {
+        max-height: 0px;
+        background: #000;
+  }
+
+  nav.black ul {
+        background: #000;
+  }
+
+  nav ul li a {
+    font-size: 4vw;
+    font-weight: 800;
+    letter-spacing: .15rem;
+  }
+
+  .showing {
+        max-height: 30em;
+  }
+
+  nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+  }
+
+  .menu-bar{
+    display: block;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 30px;
+  }
+
+  .nav-bar .code{
+    display: none;
+  }
+
+}
+
 
