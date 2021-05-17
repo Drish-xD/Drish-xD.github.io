@@ -560,6 +560,7 @@ footer {
 
   .about-img {
     justify-content: center;
+    overflow: hidden;
   }
 
   .about-img img {
