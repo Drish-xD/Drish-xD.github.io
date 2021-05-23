@@ -14,7 +14,9 @@ body {
   -webkit-animation: fadein 2s;
   animation: fadein 2s;
 }
+
 /* fade in animation of page */
+
 @-webkit-keyframes fadein {
   from {
     opacity: 0;
@@ -31,7 +33,6 @@ body {
     opacity: 1;
   }
 }
-
 
 /* Navigation bar */
 
@@ -230,7 +231,7 @@ nav ul li a {
   height: fit-content;
 }
 
-/*about me*/
+/*about me section*/
 
 .about-me {
   padding-top: 10vh;
@@ -270,7 +271,7 @@ nav ul li a {
   line-height: 12mm;
 }
 
-/*Skills*/
+/*Skills section*/
 
 .skill {
   padding-top: 10vh;
@@ -288,15 +289,19 @@ nav ul li a {
 .skill-bars {
   width: auto;
 }
+
 .skill-bars .bar {
   margin: 40px 0;
 }
+
 .skill-bars .bar:first-child {
   margin-top: 0px;
 }
+
 .skill-bars .bar .info {
   margin-bottom: 20px;
 }
+
 .skill-bars .bar .info span {
   font-family: "Varela Round", sans-serif;
   font-weight: 600;
@@ -305,11 +310,13 @@ nav ul li a {
   opacity: 0;
   animation: showText 0.5s 1s linear forwards;
 }
+
 @keyframes showText {
   100% {
     opacity: 1;
   }
 }
+
 .skill-bars .bar .progress-line {
   height: 10px;
   width: 100%;
@@ -330,6 +337,7 @@ nav ul li a {
     transform: scaleX(1);
   }
 }
+
 .bar .progress-line span {
   height: 100%;
   position: absolute;
@@ -346,18 +354,23 @@ nav ul li a {
 .bar .progress-line.Python span {
   width: 80%;
 }
+
 .bar .progress-line.Html-css span {
   width: 65%;
 }
+
 .bar .progress-line.Linux span {
   width: 75%;
 }
+
 .bar .progress-line.C span {
   width: 25%;
 }
+
 .bar .progress-line.mysql span {
   width: 35%;
 }
+
 .progress-line span::before {
   position: absolute;
   content: "";
@@ -392,15 +405,19 @@ nav ul li a {
     opacity: 1;
   }
 }
+
 .progress-line.Python span::after {
   content: "Intermediate";
 }
+
 .progress-line.Html-css span::after {
   content: "Intermediate";
 }
+
 .progress-line.Linux span::after {
   content: "Intermediate";
 }
+
 .progress-line.C span::after {
   content: "Beginner";
 }
@@ -408,7 +425,7 @@ nav ul li a {
   content: "Beginner";
 }
 
-/* Projects */
+/* Projects Section*/
 
 .projects h1 {
   text-align: left;
@@ -427,7 +444,7 @@ nav ul li a {
   line-height: 12mm;
 }
 
-/*Contact me*/
+/*Contacts Section*/
 
 .contacts {
   display: flex;
@@ -463,6 +480,8 @@ nav ul li a {
   letter-spacing: normal;
   padding-right: 20px;
 }
+
+/* tooltip for contacts */
 
 .tooltip {
   position: relative;
@@ -522,6 +541,9 @@ footer {
 /* Media Queries */
 
 @media screen and (max-width: 786px) {
+
+  /* drop down nav-bar */
+
   nav ul {
     max-height: 0;
     background: #000;
@@ -537,17 +559,17 @@ footer {
     letter-spacing: 0.15rem;
   }
 
-  .showing {
-    max-height: 30em;
-  }
-
   nav ul li {
     box-sizing: border-box;
     width: 100%;
     padding: 24px;
     text-align: center;
   }
-
+  
+  .showing {
+    max-height: 30em;
+  }
+  
   .menu-bar {
     display: block;
   }
@@ -560,6 +582,8 @@ footer {
   .nav-bar .code {
     display: none;
   }
+
+  /* container */
 
   .container-box {
     margin: 5vw;
@@ -614,6 +638,7 @@ footer {
   .projects p {
     font-size: 20px;
   }
+  
   .contacts ul {
     display: block;
   }
