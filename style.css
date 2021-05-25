@@ -1,16 +1,38 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Varela+Round&display=swap");
+/* Importing Fonts */
+
+@font-face {
+  font-family: "Truculenta";
+  src: url(Fonts/Truculenta.ttf);
+}
+
+/* variable Declaratoin */
+
+:root {
+  --font: "Truculenta";
+  --font-text-color: #eef7ff;
+  --font-secondary-color: #9fef00;
+  --font-size-main: 120px;
+  --font-size-button: 4vh;
+  --font-size-media-main: 15vw;
+}
+
+/* Css querry */
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   width: 100%;
   height: 100vh;
-  font-family: "Varela Round", sans-serif;
+  font-family: "Truculenta";
   background-image: url(assets/pattern.png);
   color: aliceblue;
+}
+
+body .body2 {
   -webkit-animation: fadein 2s;
   animation: fadein 2s;
 }
@@ -32,6 +54,121 @@ body {
   to {
     opacity: 1;
   }
+}
+
+/* Welcome Page css */
+
+.mainpage {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(assets/pattern.png);
+  overflow: hidden;
+}
+
+.content-wrap {
+  font-size: var(--font-size-main);
+  display: inline-flex;
+}
+
+.fly-in-hello {
+  list-style: none;
+}
+
+.fly-in-there {
+  list-style: none;
+}
+
+.fly-in-hello li {
+  display: inline-flex;
+  margin: 0 10px;
+  opacity: 1;
+  transition: all 3s ease;
+}
+
+.fly-in-there li {
+  display: inline-flex;
+  margin: 0 10px;
+  opacity: 1;
+  transition: all 3s ease;
+}
+
+.fly-in-hello .extraspace {
+  margin: 0 20px;
+}
+
+.enter-button {
+  display: block;
+  text-align: center;
+  font-size: var(--font-size-button);
+  text-decoration: none;
+  color: var(--font-secondary-color);
+  opacity: 1;
+  margin-top: 30px;
+  transition: all 1s ease 3s;
+}
+
+.content-hidden .fly-in-hello li {
+  opacity: 0;
+}
+
+.content-hidden .fly-in-there li {
+  opacity: 0;
+}
+
+.content-hidden .fly-in-hello li:nth-child(1) {
+  transform: translate3d(-90px, 0, 0);
+}
+
+.content-hidden .fly-in-hello li:nth-child(2) {
+  transform: translate3d(-70px, 0, 0);
+}
+
+.content-hidden .fly-in-hello li:nth-child(3) {
+  transform: translate3d(-50px, 0, 0);
+}
+
+.content-hidden .fly-in-hello li:nth-child(4) {
+  transform: translate3d(-30px, 0, 0);
+}
+
+.content-hidden .fly-in-hello li:nth-child(5) {
+  transform: translate3d(-10px, 0, 0);
+}
+
+.content-hidden .fly-in-hello li:nth-child(6) {
+  transform: translate3d(0px, 0, 0);
+}
+
+.content-hidden .fly-in-there li:nth-child(1) {
+  transform: translate3d(10px, 0, 0);
+}
+
+.content-hidden .fly-in-there li:nth-child(2) {
+  transform: translate3d(30px, 0, 0);
+}
+
+.content-hidden .fly-in-there li:nth-child(3) {
+  transform: translate3d(50px, 0, 0);
+}
+
+.content-hidden .fly-in-there li:nth-child(4) {
+  transform: translate3d(70px, 0, 0);
+}
+
+.content-hidden .fly-in-there li:nth-child(5) {
+  transform: translate3d(90px, 0, 0);
+}
+
+.content-hidden .fly-in-there li:nth-child(6) {
+  transform: translate3d(110px, 0, 0);
+}
+
+.content-hidden .enter-button {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3d(0, -30px, 0);
 }
 
 /* Navigation bar */
@@ -541,6 +678,68 @@ footer {
 /* Media Queries */
 
 @media screen and (max-width: 786px) {
+  /* welcome page */
+
+  .content-wrap {
+    font-size: var(--font-size-media-main);
+    display: inline-block;
+  }
+
+  .fly-in-there {
+    margin-top: 25px;
+  }
+
+  .content-hidden .fly-in-hello li:nth-child(1) {
+    transform: translate3d(-50px, 0, 0);
+  }
+
+  .content-hidden .fly-in-hello li:nth-child(2) {
+    transform: translate3d(-50px, 0, 0);
+  }
+
+  .content-hidden .fly-in-hello li:nth-child(3) {
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  .content-hidden .fly-in-hello li:nth-child(4) {
+    transform: translate3d(0, 0, 0);
+  }
+
+  .content-hidden .fly-in-hello li:nth-child(5) {
+    transform: translate3d(25px, 0, 0);
+  }
+
+  .fly-in-hello .extraspace {
+    margin: 0 0;
+  }
+
+  .fly-in-hello .hello-h {
+    margin-left: 25px;
+  }
+
+  .content-hidden .fly-in-there li:nth-child(1) {
+    transform: translate3d(-50px, 0, 0);
+  }
+
+  .content-hidden .fly-in-there li:nth-child(2) {
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  .content-hidden .fly-in-there li:nth-child(3) {
+    transform: translate3d(0, 0, 0);
+  }
+
+  .content-hidden .fly-in-there li:nth-child(4) {
+    transform: translate3d(25px, 0, 0);
+  }
+
+  .content-hidden .fly-in-there li:nth-child(5) {
+    transform: translate3d(50px, 0, 0);
+  }
+
+  .content-hidden .fly-in-there li:nth-child(6) {
+    transform: translate3d(75px, 0, 0);
+  }
 
   /* drop down nav-bar */
 
@@ -565,11 +764,11 @@ footer {
     padding: 24px;
     text-align: center;
   }
-  
+
   .showing {
     max-height: 30em;
   }
-  
+
   .menu-bar {
     display: block;
   }
@@ -638,7 +837,7 @@ footer {
   .projects p {
     font-size: 20px;
   }
-  
+
   .contacts ul {
     display: block;
   }
