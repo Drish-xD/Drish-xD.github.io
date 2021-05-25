@@ -393,8 +393,8 @@ nav ul li a {
 .about-txt p {
   font-weight: 200;
   font-size: 25px;
-  letter-spacing: 0.7mm;
-  line-height: 12mm;
+  letter-spacing: 0.5mm;
+  line-height: 15mm;
 }
 
 /*Skills section*/
@@ -471,7 +471,7 @@ nav ul li a {
   border-radius: 10px;
   transform: scaleX(0);
   transform-origin: center;
-  background: linear-gradient(25deg, #ba9dec, #7e57c2);
+  background: linear-gradient(25deg, #7e57c2, #a987e2);
 }
 
 .bar .progress-line span[data-scroll="in"] {
@@ -568,8 +568,8 @@ nav ul li a {
   font-size: 25px;
   color: #f0f8ff;
   text-align: justify;
-  letter-spacing: 0.7mm;
-  line-height: 12mm;
+  letter-spacing: 0.5mm;
+  line-height: 15mm;
 }
 
 /*Contacts Section*/
