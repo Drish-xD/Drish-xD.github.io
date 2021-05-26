@@ -1,18 +1,21 @@
 /* Importing Fonts */
 
 @font-face {
-  font-family: "Truculenta";
-  src: url(Fonts/Truculenta.ttf);
+  font-family: "FiraCode";
+  src: url(Fonts\firacode-webfont.woff2) format('woff2'),
+       url(Fonts/firacode-webfont.woff) format('woff');
 }
 
 @font-face {
   font-family: "Syne";
-  src: url(Fonts/Syne.ttf);
+  src: url(Fonts/syne-webfont.woff2) format('woff2'),
+       url(Fonts/syne-webfont.woff) format('woff');
 }
 
 @font-face {
-  font-family: "FiraCode";
-  src: url(Fonts/FiraCode.ttf);
+  font-family: "Truculenta";
+  src: url(Fonts/truculenta-webfont.woff2) format('woff2'),
+       url(Fonts/truculenta-webfont.woff) format('woff');
 }
 
 /* Css querry */
