@@ -46,12 +46,25 @@ $(document).ready(function() {
     $(".menu-icon").on("click", function() {
           $("nav ul").toggleClass("showing");
     });      
+});
+
+$(document).ready(function() {
+    $(".menu a").on("click", function() {
+          $("nav ul").removeClass("showing");
+    });      
 });    
+
 
 // Hamburger animation (only for screen width < 786px)
 
-var wrapperMenu = document.querySelector('.wrapper-menu');
+$(document).ready(function(){
+	$('.wrapper-menu').click(function(){
+		$(this).toggleClass('open');
+	});
+});
 
-  wrapperMenu.addEventListener('click', function(){
-    wrapperMenu.classList.toggle('open');  
+$(document).ready(function(){
+	$('.menu a').click(function(){
+		$('.wrapper-menu').removeClass('open');
+	});
 });

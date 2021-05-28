@@ -792,6 +792,11 @@ footer {
     letter-spacing: 0.25em;
   }
 
+  .header-main h1:last-child {
+    position: absolute;
+    bottom: 35%;
+  }
+
   .header h1 {
     font-size: 8vh;
     text-align: center;
