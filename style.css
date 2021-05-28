@@ -340,10 +340,14 @@ nav ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "FiraCode";
+  font-family: "Syne";
   font-size: 6vh;
   letter-spacing: 0.25em;
   color: #f0f8ff;
+}
+
+.header-main h1:last-child {
+  font-family: "Truculenta";
 }
 
 /*main container*/
