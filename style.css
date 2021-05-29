@@ -527,14 +527,11 @@ nav ul li a {
 .progress-line span::before {
   position: absolute;
   content: "";
-  top: -13px;
+  top: -12px;
   right: 0;
-  height: 0;
-  width: 0;
   border: 7px solid transparent;
-  border-bottom-width: 0px;
   border-right-width: 0px;
-  border-top-color: rgb(255, 255, 255);
+  border-top-color: #f8f8f8;
   opacity: 0;
   animation: showText2 0.5s 1.5s linear forwards;
 }
@@ -544,10 +541,11 @@ nav ul li a {
   top: -27px;
   right: 0;
   font-family: "Syne";
-  background: #ffffff;
+  background: #f8f8f8;
   color: #111;
-  padding: 1px 8px;
-  font-size: 12px;
+  padding: 2px 10px;
+  letter-spacing: .5px;
+  font-size: 13px;
   border-radius: 3px;
   opacity: 0;
   animation: showText2 0.5s 1.5s linear forwards;
