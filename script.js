@@ -15,9 +15,8 @@ $('.nav-bar a').on('click', function(e){
 // Animations AOS
 
 AOS.init({
-    delay: 200,
-    offset: 150,
-    duration: 1000,
+    offset: 100,
+    duration: 1200,
     once: false,
     anchorPlacement: 'center-bottom',
 });    
