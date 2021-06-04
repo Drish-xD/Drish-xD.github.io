@@ -223,7 +223,7 @@ nav ul li a {
   text-decoration: none;
   font-family: "Syne";
   color: #f0f8ff;
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 800;
   letter-spacing: 0.15rem;
 }
@@ -286,7 +286,7 @@ nav ul li a {
 
 .menu-icon {
   position: absolute;
-  margin: 2.5vh;
+  margin: 3vh;
   right: 0;
   display: none;
 }
