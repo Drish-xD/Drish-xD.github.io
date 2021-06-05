@@ -652,11 +652,12 @@ nav ul li a {
   width: 200px;
   padding: 10px;
   border-radius: 10px;
+  border-color: #fafafa;
   background: #fafafa;
   color: #0c0c0c;
   text-align: center;
   opacity: 0;
-  transition: 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   visibility: hidden;
 }
 
@@ -670,11 +671,11 @@ nav ul li a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -55%);
+  transform: translate(-50%, -57%);
   border: 10px solid #fafafa;
   border-color: #fafafa transparent transparent transparent;
   opacity: 0;
-  transition: 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   visibility: hidden;
 }
 
