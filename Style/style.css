@@ -589,7 +589,7 @@ nav ul li a {
   padding: 10vh 0 3vh 0;
 }
 
-.projects .project-1 a {
+.projects .project-1 .p1-title a {
   display: flex;
   font: 35px "FiraCode";
   font-weight: 600;
@@ -598,7 +598,6 @@ nav ul li a {
   text-align: left;
   text-decoration: none;
   cursor: pointer;
-  transition: all 12s ease-in-out;
 }
 
 .projects .project-1 p {
@@ -609,6 +608,13 @@ nav ul li a {
   letter-spacing: 0.5mm;
   line-height: 15mm;
   padding: 0 3vh;
+}
+
+.projects .project-1 .p1-desc a {
+  font-family: "FiraCode";
+  color: #8a62cf;
+  font-size: 25px;
+  text-decoration: none;
 }
 
 /*Contacts Section*/
@@ -908,13 +914,17 @@ footer {
     letter-spacing: 2mm;
   }
   
-  .projects .project-1 a {
+  .projects .project-1 .p1-title a {
     font: 30px "FiraCode";
     font-weight: 600;
     letter-spacing: normal;
   }
 
   .projects .project-1 p {
+    font-size: 20px;
+  }
+
+  .projects .project-1 .p1-desc a {
     font-size: 20px;
   }
 
@@ -938,7 +948,7 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
-  .projects .project-1 a {
+  .projects .project-1 .p1-title a {
     text-align: center;
   }
 }
