@@ -8,9 +8,10 @@
     <link rel="shortcut icon" type="image/x-icon" href="Assets/Code typing.png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Drish | Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
-  <body oncontextmenu="return false">
+  <body oncontextmenu="return false" >
     <!-- container  -->
 
     <section class="mainpage">
@@ -34,7 +35,7 @@
           </ul>
         </div>
 
-        <a href="Portfolio" class="enter-button">ENTER</a>
+        <a href="Portfolio.html" class="enter-button">ENTER</a>
       </div>
     </section>
 
@@ -54,17 +55,20 @@
 
       // fade out page animation
 
-      $(document).ready(function () {
-        $(".enter-button").click(function (event) {
-          event.preventDefault();
-          newLocation = this.href;
-          $("body").fadeOut(500, newpage);
+      $(document).ready(function(){
+        $(".enter-button").click(function(){
+          $("*").fadeOut(5000);
+          console.log('duhcsyudshbcn')
         });
-        function newpage() {
-          window.location = newLocation;
-        }
       });
+
+      AOS.init({
+        mirror : true,
+      });
+
     </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script
       color="159, 239, 0"
