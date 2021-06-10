@@ -31,7 +31,7 @@ body {
   height: 100vh;
   background-color: #0c0c0c;
   background-image: url(../Assets/topography.svg);
-  cursor: url("https://github.com/Drish-xD/Drish-xD.github.io/tree/main/Assets/cursor.png"), auto;
+  cursor: url("https://github.com/Drish-xD/Drish-xD.github.io/blob/main/Assets/cursor.png"), auto;
 }
 
 .body2 {
@@ -40,7 +40,7 @@ body {
 }
 
 body a:hover{
-  cursor: url("https://github.com/Drish-xD/Drish-xD.github.io/tree/main/Assets/hover.png"), auto;
+  cursor: url("https://github.com/Drish-xD/Drish-xD.github.io/blob/main/Assets/hover.png"), auto;
 }
 
 /* fade in animation of mainpage */
