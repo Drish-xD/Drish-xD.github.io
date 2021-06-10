@@ -31,16 +31,11 @@ body {
   height: 100vh;
   background-color: #0c0c0c;
   background-image: url(../Assets/topography.svg);
-  cursor: url("https://github.com/Drish-xD/Drish-xD.github.io/blob/main/Assets/cursor.png"), auto;
 }
 
 .body2 {
   -webkit-animation: fadein 2s;
   animation: fadein 2s;
-}
-
-body a:hover{
-  cursor: url("https://github.com/Drish-xD/Drish-xD.github.io/blob/main/Assets/hover.png"), auto;
 }
 
 /* fade in animation of mainpage */
@@ -133,6 +128,7 @@ body a:hover{
   opacity: 1;
   margin-top: 30px;
   transition: all 1s ease 3s;
+  cursor: pointer;
 }
 
 .content-hidden .fly-in-hello li {
@@ -231,6 +227,7 @@ nav ul li a {
   font-size: 21px;
   font-weight: 800;
   letter-spacing: 0.15rem;
+  cursor: pointer;
 }
 
 .spinner {
@@ -621,6 +618,7 @@ nav ul li a {
   color: #8a62cf;
   font-size: 25px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /*Contacts Section*/
@@ -655,6 +653,7 @@ nav ul li a {
   display: block;
   font-size: 40px;
   color: #f8f8f8;
+  cursor: pointer;
 }
 
 .contacts h5 {
@@ -713,6 +712,7 @@ nav ul li a {
 .tooltip:hover:after {
   opacity: 1;
   visibility: visible;
+  cursor: pointer;
 }
 
 /*Footer*/
