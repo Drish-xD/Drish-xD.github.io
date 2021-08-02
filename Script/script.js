@@ -18,7 +18,7 @@ AOS.init({
     offset: 100,
     duration: 1200,
     once: false,
-    anchorPlacement: 'center-bottom',
+    // anchorPlacement: 'center-bottom',
 });    
 
 // Scrolling Effect nav-bar 
