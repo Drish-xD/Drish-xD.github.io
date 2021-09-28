@@ -545,7 +545,7 @@ h2 {
   padding: 0 25px;
 }
 
-.project:nth-child(4) p {
+.project:last-child p {
   text-align: center;
 }
 
@@ -557,7 +557,7 @@ h2 {
 }
 
 .project:nth-child(3) .btn,
-.project:nth-child(4) .btn {
+.project:last-child .btn {
   justify-content: center;
 }
 
