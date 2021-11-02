@@ -527,10 +527,28 @@ h2 {
   justify-content: space-between;
   background-color: #25313999;
   border-radius: 25px;
+  padding: 25px;
+}
+
+.frontend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.frontend > div {
+  width: 300px;
+  margin: 20px 10px;
 }
 
 .project:last-child {
   grid-column: 1 / 3;
+}
+
+@media screen and (max-width: 703px) {
+  .project:last-child {
+    grid-column: 1 ;
+  }  
 }
 
 .project h3 {
@@ -539,14 +557,14 @@ h2 {
   color: #8a62cf;
   letter-spacing: 0.15rem;
   text-align: center;
-  padding: 10px;
+  word-wrap: break-word;
 }
 
 .project p {
   font: 300 20px "FiraCode";
   text-align: justify;
   line-height: 9mm;
-  padding: 0 25px;
+  padding: 10px 0;
 }
 
 .project:last-child p {
@@ -557,7 +575,6 @@ h2 {
   display: flex;
   bottom: 1px;
   justify-content: space-between;
-  padding: 10px 25px 20px 25px;
 }
 
 .project:nth-child(3) .btn,
