@@ -1,4 +1,4 @@
-# Drish-xD.github.io
+# Drish | Portfolio
 
 This is my portfolio Website
 
