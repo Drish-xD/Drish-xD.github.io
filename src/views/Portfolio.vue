@@ -1,5 +1,5 @@
 <template>
-  <div class="" data-aos="fade-in">
+  <div data-aos="fade-in">
     <nav class="nav-bar">
       <div class="menu-bar">
         <div class="menu-icon">
@@ -276,6 +276,10 @@
         </li>
       </ul>
     </section>
+
+    <footer class="foot">
+      &copy; Copyrights 2021 by Drish. All Rights Reserved.
+    </footer>
   </div>
 </template>
 

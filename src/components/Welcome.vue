@@ -28,10 +28,6 @@
 import $ from "jquery";
 
 export default {
-  name: "Welcome",
-  props: {
-    msg: String,
-  },
   methods: {
     delay: function () {
       var welcomeSection = $(".welcome-section");
@@ -149,5 +145,78 @@ ul li {
   opacity: 0;
   visibility: hidden;
   transform: translate3d(0, -30px, 0);
+}
+
+@media screen and (max-width: 1150px) {
+  .content-wrap {
+    font-size: 9vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #0e0e0e;
+  }
+
+  .content-wrap {
+    font-size: 15vw;
+    display: inline-block;
+  }
+
+  .fly-in-there {
+    margin-top: 25px;
+  }
+
+  .content-hidden .fly-in-hello li:nth-child(1) {
+    transform: translate3d(-50px, 0, 0);
+  }
+
+  .content-hidden .fly-in-hello li:nth-child(2) {
+    transform: translate3d(-50px, 0, 0);
+  }
+
+  .content-hidden .fly-in-hello li:nth-child(3) {
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  .content-hidden .fly-in-hello li:nth-child(4) {
+    transform: translate3d(0, 0, 0);
+  }
+
+  .content-hidden .fly-in-hello li:nth-child(5) {
+    transform: translate3d(25px, 0, 0);
+  }
+
+  .fly-in-hello .extraspace {
+    margin: 0 0;
+  }
+
+  .fly-in-hello .hello-h {
+    margin-left: 25px;
+  }
+
+  .content-hidden .fly-in-there li:nth-child(1) {
+    transform: translate3d(-50px, 0, 0);
+  }
+
+  .content-hidden .fly-in-there li:nth-child(2) {
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  .content-hidden .fly-in-there li:nth-child(3) {
+    transform: translate3d(0, 0, 0);
+  }
+
+  .content-hidden .fly-in-there li:nth-child(4) {
+    transform: translate3d(25px, 0, 0);
+  }
+
+  .content-hidden .fly-in-there li:nth-child(5) {
+    transform: translate3d(50px, 0, 0);
+  }
+
+  .content-hidden .fly-in-there li:nth-child(6) {
+    transform: translate3d(75px, 0, 0);
+  }
 }
 </style>
