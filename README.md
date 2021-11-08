@@ -1,7 +1,7 @@
 # Portfolio
 Live Demo -> [Portfolio](https://drish-portfolio.netlify.app/)
 
-## LocaHost Project setup
+## LocalHost Project setup
 ```npm install```
 
 ### Compiles and hot-reloads for development
