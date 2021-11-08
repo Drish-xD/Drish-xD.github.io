@@ -59,10 +59,9 @@ body {
 /* Hello there page css */
 
 .mainpage {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
+  display: grid;
+  place-content: center center;
   overflow: hidden;
 }
 
@@ -73,26 +72,12 @@ body {
   display: inline-flex;
 }
 
-.fly-in-hello {
-  list-style: none;
-}
-
-.fly-in-there {
-  list-style: none;
-}
-
-.fly-in-hello li {
-  display: inline-flex;
-  margin: 0 10px;
-  opacity: 1;
-  transition: all 3s ease;
-}
-
+.fly-in-hello li,
 .fly-in-there li {
   display: inline-flex;
   margin: 0 10px;
   opacity: 1;
-  transition: all 3s ease;
+  transition: all 1.5s ease;
 }
 
 .fly-in-hello .extraspace {
@@ -106,17 +91,13 @@ body {
   font-size: 1.7rem;
   letter-spacing: 0.1rem;
   color: #9fef00;
-  text-decoration: none;
   opacity: 1;
   margin-top: 30px;
-  transition: all 1s ease 3s;
+  transition: all 1s ease 1.5s;
   cursor: pointer;
 }
 
-.content-hidden .fly-in-hello li {
-  opacity: 0;
-}
-
+.content-hidden .fly-in-hello li,
 .content-hidden .fly-in-there li {
   opacity: 0;
 }
@@ -536,7 +517,7 @@ h2 {
   justify-content: center;
 }
 
-.frontend > div {
+.frontend>div {
   width: 300px;
   margin: 20px 10px;
 }
@@ -547,8 +528,8 @@ h2 {
 
 @media screen and (max-width: 703px) {
   .project:last-child {
-    grid-column: 1 ;
-  }  
+    grid-column: 1;
+  }
 }
 
 .project h3 {

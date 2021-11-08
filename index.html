@@ -43,7 +43,7 @@
           <li>L</li>
           <li>L</li>
           <li>O</li>
-          <li class="extraspace">&nbsp</li>
+          <li class="extraspace">&nbsp;</li>
         </ul>
         <ul class="fly-in-there">
           <li>T</li>
@@ -55,14 +55,14 @@
         </ul>
       </div>
 
-      <a href="Portfolio" class="enter-button">ENTER</a>
+      <a class="enter-button">ENTER</a>
     </div>
   </section>
 
   <!-- scripting -->
 
   <script>
-    // text animation
+    // text animation onload
 
     $(function () {
       var welcomeSection = $(".welcome-section"),
@@ -71,6 +71,14 @@
       setTimeout(function () {
         welcomeSection.removeClass("content-hidden");
       }, 800);
+
+      // text animation on change
+
+      enterButton.on('click', function (event) {
+        event.preventDefault();
+        welcomeSection.addClass("content-hidden");
+        setTimeout(function(){ window.location = "/Portfolio.html"; }, 2000);
+      });
     });
   </script>
 
