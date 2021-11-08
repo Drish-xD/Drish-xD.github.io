@@ -440,11 +440,11 @@ h2 {
   animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
-.bar .progress-line.Python span {
-  width: 75%;
+.bar .progress-line.Html-css span {
+  width: 95%;
 }
 
-.bar .progress-line.Html-css span {
+.bar .progress-line.bootstrap span {
   width: 95%;
 }
 
@@ -452,12 +452,20 @@ h2 {
   width: 60%;
 }
 
+.bar .progress-line.Python span {
+  width: 75%;
+}
+
 .bar .progress-line.C span {
+  width: 45%;
+}
+
+.bar .progress-line.vue span {
   width: 25%;
 }
 
 .bar .progress-line.mysql span {
-  width: 90%;
+  width: 85%;
 }
 
 .progress-line span::before {
