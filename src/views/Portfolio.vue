@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="" data-aos="fade-in">
     <nav class="nav-bar">
       <div class="menu-bar">
         <div class="menu-icon">

@@ -1,5 +1,5 @@
 <template>
-  <section class="mainpage">
+  <section class="mainpage" id="mainpage">
     <div class="welcome-section content-hidden">
       <div class="content-wrap">
         <ul class="fly-in-hello">
@@ -19,7 +19,7 @@
           <li>!</li>
         </ul>
       </div>
-      <router-link class="enter-button" to="/Portfolio">ENTER</router-link>
+      <div @click="delay" class="enter-button" id="enter">ENTER</div>
     </div>
   </section>
 </template>
@@ -32,17 +32,122 @@ export default {
   props: {
     msg: String,
   },
+  methods: {
+    delay: function () {
+      var welcomeSection = $(".welcome-section");
+      welcomeSection.addClass("content-hidden");
+      setTimeout(() => this.$router.push({ path: "/Portfolio" }), 3500);
+    },
+  },
   mounted() {
     $(function () {
       var welcomeSection = $(".welcome-section");
 
       setTimeout(function () {
         welcomeSection.removeClass("content-hidden");
-      }, 800);
+      }, 500);
     });
   },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
+<style scoped>
+.mainpage {
+  height: 100vh;
+  display: grid;
+  place-content: center center;
+  overflow: hidden;
+}
+
+.content-wrap {
+  font-family: "Truculenta";
+  font-size: 120px;
+  color: #f1f1f1;
+  display: inline-flex;
+}
+
+ul li {
+  display: inline-flex;
+  margin: 0 10px;
+  opacity: 1;
+  transition: all 3s ease;
+}
+
+.fly-in-hello .extraspace {
+  margin: 0 20px;
+}
+
+.enter-button {
+  font-family: "Syne";
+  display: block;
+  text-align: center;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  color: #9fef00;
+  text-decoration: none;
+  opacity: 1;
+  margin-top: 30px;
+  transition: all 1s ease 3s;
+  cursor: pointer;
+}
+
+.content-hidden .fly-in-hello li,
+.content-hidden .fly-in-there li {
+  opacity: 0;
+}
+
+.content-hidden .fly-in-hello li:nth-child(1) {
+  transform: translate3d(-90px, 0, 0);
+}
+
+.content-hidden .fly-in-hello li:nth-child(2) {
+  transform: translate3d(-70px, 0, 0);
+}
+
+.content-hidden .fly-in-hello li:nth-child(3) {
+  transform: translate3d(-50px, 0, 0);
+}
+
+.content-hidden .fly-in-hello li:nth-child(4) {
+  transform: translate3d(-30px, 0, 0);
+}
+
+.content-hidden .fly-in-hello li:nth-child(5) {
+  transform: translate3d(-10px, 0, 0);
+}
+
+.content-hidden .fly-in-hello li:nth-child(6) {
+  transform: translate3d(0px, 0, 0);
+}
+
+.content-hidden .fly-in-there li:nth-child(1) {
+  transform: translate3d(10px, 0, 0);
+}
+
+.content-hidden .fly-in-there li:nth-child(2) {
+  transform: translate3d(30px, 0, 0);
+}
+
+.content-hidden .fly-in-there li:nth-child(3) {
+  transform: translate3d(50px, 0, 0);
+}
+
+.content-hidden .fly-in-there li:nth-child(4) {
+  transform: translate3d(70px, 0, 0);
+}
+
+.content-hidden .fly-in-there li:nth-child(5) {
+  transform: translate3d(90px, 0, 0);
+}
+
+.content-hidden .fly-in-there li:nth-child(6) {
+  transform: translate3d(110px, 0, 0);
+}
+
+.content-hidden .enter-button {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3d(0, -30px, 0);
+}
+</style>
