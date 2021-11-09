@@ -80,7 +80,7 @@
             </div>
           </div>
           <div>
-            <p>Code-Genesis</p>
+            <p>Code-Genesis Website</p>
             <div class="btn">
               <a
                 href="https://drish-xd.is-a.dev/Code-Genesis-tempate"
