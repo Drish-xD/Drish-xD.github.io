@@ -21,8 +21,6 @@
     url(assets/Fonts/truculenta-webfont.woff) format("woff");
 }
 
-/* Css querry */
-
 * {
   margin: 0;
   padding: 0;

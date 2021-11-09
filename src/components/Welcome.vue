@@ -32,7 +32,7 @@ export default {
     delay: function () {
       var welcomeSection = $(".welcome-section");
       welcomeSection.addClass("content-hidden");
-      setTimeout(() => this.$router.push({ path: "/Portfolio" }), 3500);
+      setTimeout(() => this.$router.push({ path: "/Portfolio" }), 2000);
     },
   },
   mounted() {
@@ -63,11 +63,12 @@ export default {
   display: inline-flex;
 }
 
-ul li {
+.fly-in-hello li,
+.fly-in-there li {
   display: inline-flex;
   margin: 0 10px;
   opacity: 1;
-  transition: all 3s ease;
+  transition: all 1.5s ease;
 }
 
 .fly-in-hello .extraspace {
@@ -81,10 +82,9 @@ ul li {
   font-size: 1.7rem;
   letter-spacing: 0.1rem;
   color: #9fef00;
-  text-decoration: none;
   opacity: 1;
   margin-top: 30px;
-  transition: all 1s ease 3s;
+  transition: all 1s ease 1.5s;
   cursor: pointer;
 }
 
