@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
-    "canvas-nest.js": "^2.0.4",
     "core-js": "^3.6.5",
     "jquery": "^3.6.0",
     "scroll-out": "^2.2.12",
