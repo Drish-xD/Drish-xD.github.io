@@ -44,3 +44,42 @@ export default {
   },
 };
 </script>
+
+<style lang="css">
+.container {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  font-family: "Syne";
+  color: #f1f1f1;
+}
+
+.container-box {
+  width: 50em;
+  height: auto;
+}
+
+h2 {
+  padding: 80px 0 25px 0;
+  text-align: left;
+  color: #7e57c2;
+  font-size: 70px;
+  letter-spacing: 5mm;
+}
+
+@media screen and (max-width: 1150px) {
+  .container-box {
+    width: 45em;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-box {
+    width: 85%;
+  }
+}
+</style>

@@ -39,4 +39,22 @@ body {
   -ms-user-select: none;
   user-select: none;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000000;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #24303880;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #253139;
+}
 </style>

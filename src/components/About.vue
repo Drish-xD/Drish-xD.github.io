@@ -28,4 +28,53 @@
 export default {};
 </script>
 
-<style lang="css"></style>
+<style lang="css">
+.about-img {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+}
+
+.about-img img {
+  width: 65%;
+}
+
+.about-txt {
+  text-align: justify;
+}
+
+.about-txt h3 {
+  font-size: 30px;
+  letter-spacing: 1mm;
+  margin-bottom: 15px;
+}
+
+.about-txt p {
+  font-size: 25px;
+  letter-spacing: 0.5mm;
+  line-height: 13mm;
+}
+
+@media screen and (max-width: 1150px) {
+  .about-img {
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .about-img img {
+      width: 70%;
+    }
+
+    .about-txt h3 {
+      font-size: 24px;
+      letter-spacing: 1mm;
+    }
+
+    .about-txt p {
+      font-size: 20px;
+      line-height: 11mm;
+    }
+  }
+}
+</style>

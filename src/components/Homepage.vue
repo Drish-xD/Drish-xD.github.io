@@ -16,4 +16,29 @@ export default {
   },
 };
 </script>
-<style lang="css"></style>
+<style lang="css">
+.header-main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Syne";
+  font-size: 50px;
+  letter-spacing: 0.25em;
+  color: #f1f1f1;
+}
+
+.header-main h1:last-child {
+  font-family: "Truculenta";
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-main {
+    font-size: 2rem;
+  }
+}
+</style>
