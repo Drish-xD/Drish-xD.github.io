@@ -16,7 +16,7 @@ export default {
   },
 };
 </script>
-<style lang="css">
+<style lang="css" scoped>
 .header-main {
   height: 100vh;
   width: 100%;

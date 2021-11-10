@@ -38,6 +38,8 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ::-webkit-scrollbar {
@@ -56,5 +58,11 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #253139;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #0e0e0e;
+  }
 }
 </style>

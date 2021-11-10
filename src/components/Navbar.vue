@@ -87,7 +87,7 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 nav {
   position: fixed;
   width: 100%;
@@ -244,8 +244,6 @@ nav ul li a {
 }
 
 @media screen and (max-width: 768px) {
-  /* drop down nav-bar */
-
   nav ul {
     max-height: 0;
     background: rgba(0, 0, 0, 0.9);

@@ -74,7 +74,7 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 .skill-bars .bar {
   margin-bottom: 40px;
 }

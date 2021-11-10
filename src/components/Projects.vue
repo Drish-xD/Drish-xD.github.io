@@ -109,12 +109,11 @@
 export default {};
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 .projects-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2.5rem;
-  overflow: hidden;
 }
 
 .project {

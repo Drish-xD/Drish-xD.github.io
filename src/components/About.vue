@@ -28,7 +28,7 @@
 export default {};
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 .about-img {
   display: flex;
   justify-content: flex-end;
@@ -60,21 +60,21 @@ export default {};
   .about-img {
     justify-content: center;
   }
+}
 
-  @media screen and (max-width: 768px) {
-    .about-img img {
-      width: 70%;
-    }
+@media screen and (max-width: 768px) {
+  .about-img img {
+    width: 70%;
+  }
 
-    .about-txt h3 {
-      font-size: 24px;
-      letter-spacing: 1mm;
-    }
+  .about-txt h3 {
+    font-size: 24px;
+    letter-spacing: 1mm;
+  }
 
-    .about-txt p {
-      font-size: 20px;
-      line-height: 11mm;
-    }
+  .about-txt p {
+    font-size: 20px;
+    line-height: 11mm;
   }
 }
 </style>

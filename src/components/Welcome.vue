@@ -47,7 +47,6 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .mainpage {
   height: 100vh;
@@ -154,10 +153,6 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    background-color: #0e0e0e;
-  }
-
   .content-wrap {
     font-size: 15vw;
     display: inline-block;

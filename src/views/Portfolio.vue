@@ -52,6 +52,7 @@ export default {
   z-index: 1;
   font-family: "Syne";
   color: #f1f1f1;
+  overflow: hidden;
 }
 
 .container-box {
