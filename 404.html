@@ -4,48 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Not Found</title>
-    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Error 404!!!</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./Assets/CodeTyping.svg" />
+    <link rel="stylesheet" href="./Style/style.css" />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
+        section {
             width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        main {
-            height: 90vh;
+            min-height: 100vh;
             display: grid;
+            place-items: center center;
             place-content: center center;
         }
-
-        .header404 {
-            font-size: 48px;
+        img {
+            width: 80%;
+            height: auto;
         }
-
-        .content404 {
-            text-align: center;
+        h2 {    
+            padding: 25px 0 0 0;
+        }
+        a {
+            font: 600 18px "Syne";
+            text-decoration: none;
+            letter-spacing: 0.15rem;
+            background-color: #243038b3;
+            border-radius: 50px;
+            border: 2px solid #7e57c2;
+            color: #f1f1f1;
+            padding: 5px 20px;
+            cursor: pointer;
+            margin-bottom: 25px;
+            transition: box-shadow 0.5s, color 0.55s;
+        }
+        a:hover {
+            box-shadow: inset 0 0 10px 20px #7e56c2b3;
+            color: #0c0c0c;
         }
     </style>
 </head>
 
 <body>
-    <main>
-        <h4 class="header404">404</h4>
-        <div class="content-404">
-            Uh-oh! We couldn't find the page you are looking for.
-        </div>
-        <p>
-            <a href="/">Check our home page</a>
-        </p>
-    </main>
-
+    <section>
+        <h2>Page Not Found </h2>
+        <img src="./Assets/404 Error.svg" alt="">
+        <a href="https://drish-xd.is-a.dev/Portfolio">Go Home</a>
+    </section>
 </body>
 
 </html>
