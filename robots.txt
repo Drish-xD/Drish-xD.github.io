@@ -1,0 +1,6 @@
+# robots.txt for http://drish-xd.is-a.dev/
+
+User-Agent: *
+Disallow: /Assets/*
+
+Sitemap: https://drish-xd.is-a.dev/sitemap.xml
