@@ -1,30 +1,30 @@
-<template lang="hmtl">
-            <nav class="nav-bar">
-            <div class="menu-bar">
-            <div class="menu-icon">
-                <div class="wrapper-menu">
-                <div class="line-menu half start"></div>
-                <div class="line-menu"></div>
-                <div class="line-menu half end"></div>
-                </div>
-            </div>
-            </div>
+<template>
+  <nav class="nav-bar">
+    <div class="menu-bar">
+      <div class="menu-icon">
+        <div class="wrapper-menu">
+          <div class="line-menu half start"></div>
+          <div class="line-menu"></div>
+          <div class="line-menu half end"></div>
+        </div>
+      </div>
+    </div>
 
-            <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-            </div>
+    <div class="spinner">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
+    </div>
 
-            <div class="menu">
-            <ul>
-                <li><a href="#Homepage">Home</a></li>
-                <li><a href="#About-me">About</a></li>
-                <li><a href="#Skills">Skill</a></li>
-                <li><a href="#Contacts">Contact</a></li>
-            </ul>
-            </div>
-        </nav>
+    <div class="menu">
+      <ul>
+        <li><a href="#Homepage">Home</a></li>
+        <li><a href="#About-me">About</a></li>
+        <li><a href="#Skills">Skill</a></li>
+        <li><a href="#Contacts">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 </template>
 
 <script>
@@ -87,7 +87,7 @@ export default {
 };
 </script>
 
-<style lang="css" scoped>
+<style scoped>
 nav {
   position: fixed;
   width: 100%;

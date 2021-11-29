@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <div class="project-section" id="projects">
     <h2 data-aos="fade-up-right">Projects</h2>
     <div class="projects-list">
@@ -109,7 +109,7 @@
 export default {};
 </script>
 
-<style lang="css" scoped>
+<style scoped>
 .projects-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

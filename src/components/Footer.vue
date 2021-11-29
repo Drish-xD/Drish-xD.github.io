@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <section data-aos="fade-up" class="contacts" id="Contacts">
     <ul>
       <li>
@@ -50,7 +50,7 @@ export default {
 };
 </script>
 
-<style lang="css" scoped>
+<style scoped>
 .contacts {
   display: flex;
   margin: 60px 0;

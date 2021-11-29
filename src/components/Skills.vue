@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <div class="skill" id="Skills">
     <h2 data-aos="fade-up-right">Skills</h2>
     <div class="skill-bars">
@@ -74,7 +74,7 @@ export default {
 };
 </script>
 
-<style lang="css" scoped>
+<style scoped>
 .skill-bars .bar {
   margin-bottom: 40px;
 }

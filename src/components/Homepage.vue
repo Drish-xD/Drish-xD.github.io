@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <section class="homepage" id="Homepage">
     <div class="header-main">
       <h1>Welcome to my Website</h1>
@@ -16,7 +16,7 @@ export default {
   },
 };
 </script>
-<style lang="css" scoped>
+<style scoped>
 .header-main {
   height: 100vh;
   width: 100%;

@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <div class="about-me" id="About-me">
     <div class="header">
       <h2 data-aos="fade-up-right">About Me</h2>
@@ -28,7 +28,7 @@
 export default {};
 </script>
 
-<style lang="css" scoped>
+<style scoped>
 .about-img {
   display: flex;
   justify-content: flex-end;
