@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
+import Error from "../components/404.vue";
 
 const routes = [
   {
@@ -15,6 +16,11 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Portfolio.vue"),
+  },
+  {
+    path: "/*",
+    name: "Error",
+    component: Error,
   },
 ];
 
