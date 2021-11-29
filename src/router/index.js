@@ -1,6 +1,9 @@
-import { createRouter, createWebHistory } from "vue-router";
+import Vue from "vue";
+import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Error from "../components/404.vue";
+
+Vue.use(VueRouter);
 
 const routes = [
   {
@@ -18,14 +21,15 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/Portfolio.vue"),
   },
   {
-    path: "/:pathMatch(.*)*",
+    path: " *",
     name: "Error",
     component: Error,
   },
 ];
 
-const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+const router = new VueRouter({
+  mode: "history",
+  base: process.env.BASE_URL,
   routes,
 });
 

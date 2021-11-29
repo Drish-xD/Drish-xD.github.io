@@ -1,5 +1,8 @@
 <template>
   <section class="mainpage" id="mainpage">
+    <vue-canvas-nest
+      :config="{ color: '159,239,0', count: 200, opacity: 1, zindex: 0 }"
+    ></vue-canvas-nest>
     <div class="welcome-section content-hidden">
       <div class="content-wrap">
         <ul class="fly-in-hello">
@@ -26,8 +29,10 @@
 
 <script>
 import $ from "jquery";
+import vueCanvasNest from "vue-canvas-nest";
 
 export default {
+  components: { vueCanvasNest },
   methods: {
     delay: function () {
       var welcomeSection = $(".welcome-section");

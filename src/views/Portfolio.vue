@@ -1,5 +1,5 @@
 <template>
-  <div data-aos="fade-in">
+  <div>
     <navbar />
     <homepage />
     <section class="container">
