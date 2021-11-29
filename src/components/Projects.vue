@@ -43,6 +43,20 @@
       </div>
 
       <div class="project" data-aos="slide-left" data-aos-delay="250">
+        <h3>Todo WebApp</h3>
+        <p>
+          Todo website build using javascript framework i.e. vue.js and styled
+          using tailwindcss. It can add, delete and save todo in localstorage.
+        </p>
+        <div class="btn">
+          <a href="https://github.com/Drish-xD/ToDozoid" target="_blank"
+            >Code</a
+          >
+          <a href="https://todozoid.netlify.app/" target="_blank">Demo</a>
+        </div>
+      </div>
+
+      <div class="project" data-aos="slide-right" data-aos-delay="250">
         <h3>Random User Generator</h3>
         <p>
           It generates random user using a API 'Random user API' and written in
@@ -53,6 +67,21 @@
             >Code</a
           >
           <a href="https://drish-xd.is-a.dev/Random-user/" target="_blank"
+            >Demo</a
+          >
+        </div>
+      </div>
+
+      <div class="project" data-aos="slide-left" data-aos-delay="250">
+        <h3>Tesla Clone</h3>
+        <p>
+          A Tesla Clone website build using javascript framework i.e. vue.js.
+        </p>
+        <div class="btn">
+          <a href="https://github.com/Drish-xD/Tesla-clone" target="_blank"
+            >Code</a
+          >
+          <a href="https://drish-xd.is-a.dev/Tesla-clone/" target="_blank"
             >Demo</a
           >
         </div>

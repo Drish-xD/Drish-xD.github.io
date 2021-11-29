@@ -24,6 +24,14 @@
             ></a>
           </div>
 
+          <!-- Github -->
+
+          <div class="icon-soc">
+            <a href="https://github.com/Drish-xD" target="_blank"
+              ><span data-text="Drish_xD" class="tooltip"
+                ><Icon icon="entypo-social:github" /></span
+            ></a>
+          </div>
           <!-- twitter -->
 
           <div class="icon-soc">
@@ -105,9 +113,8 @@ export default {
   transform: translate(-50%, -130%);
   font-family: "Syne";
   letter-spacing: 0.3mm;
-  width: 200px;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 10px 25px;
+  border-radius: 20px;
   background: #fafafa;
   color: #0c0c0c;
   opacity: 0;

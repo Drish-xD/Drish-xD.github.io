@@ -2,7 +2,7 @@
   <section>
     <h2>Page Not Found</h2>
     <img src="../assets/img/Error.svg" alt="404" />
-    <a href="https://drish-xd.is-a.dev/Portfolio">Go Home</a>
+    <a href="/Portfolio">Go Home</a>
   </section>
 </template>
 <script>

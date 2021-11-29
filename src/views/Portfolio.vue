@@ -1,15 +1,18 @@
 <template>
-  <div data-aos="fade-in">
-    <navbar />
-    <homepage />
-    <section class="container">
-      <div class="container-box">
-        <about />
-        <skills />
-        <project />
-      </div>
-    </section>
-    <footerr />
+  <div>
+    <navbar data-aos="fade-in" />
+    <div data-aos="fade-in">
+      <homepage />
+      <section class="container">
+        <div class="container-box">
+          <about />
+          <skills />
+          <Github />
+          <project />
+        </div>
+      </section>
+      <footerr />
+    </div>
   </div>
 </template>
 
@@ -22,6 +25,7 @@ import about from "../components/About.vue";
 import skills from "../components/Skills.vue";
 import project from "../components/Projects.vue";
 import footerr from "../components/Footer.vue";
+import Github from "../components/Github.vue";
 
 AOS.init();
 export default {
@@ -30,6 +34,7 @@ export default {
     Homepage,
     about,
     skills,
+    Github,
     project,
     footerr,
   },

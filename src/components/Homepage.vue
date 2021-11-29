@@ -2,8 +2,8 @@
   <section class="homepage" id="Homepage">
     <vue-canvas-nest
       :config="{ color: '255,255,255', count: 200, opacity: 1, zindex: 0 }"
+      :el="'#Homepage'"
     ></vue-canvas-nest>
-
     <div class="header-main">
       <h1>Welcome to my Website</h1>
       <h1>^_^</h1>
