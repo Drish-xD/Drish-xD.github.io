@@ -18,7 +18,7 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/Portfolio.vue"),
   },
   {
-    path: "/*",
+    path: "/:pathMatch(.*)*",
     name: "Error",
     component: Error,
   },

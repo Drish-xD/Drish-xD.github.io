@@ -8,7 +8,8 @@
 <script>
 export default {};
 </script>
-<style>
+<style src="../views/Portfolio.vue"></style>
+<style scoped>
 section {
   width: 100%;
   min-height: 100vh;
@@ -24,6 +25,7 @@ img {
 
 h2 {
   padding: 25px 0 0 0;
+  font-family: "Syne";
 }
 
 a {
