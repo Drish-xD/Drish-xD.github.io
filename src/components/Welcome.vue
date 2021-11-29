@@ -70,7 +70,7 @@ export default {
 .fly-in-hello li,
 .fly-in-there li {
   display: inline-flex;
-  margin: 0 10px;
+  margin: 0 20px;
   opacity: 1;
   transition: all 1.5s ease;
 }
@@ -161,6 +161,11 @@ export default {
   .content-wrap {
     font-size: 15vw;
     display: inline-block;
+  }
+
+  .fly-in-hello li,
+  .fly-in-there li {
+    margin: 0 12px;
   }
 
   .fly-in-there {
