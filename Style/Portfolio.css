@@ -76,6 +76,7 @@ nav ul {
 
 nav.black ul {
   background: #000000e6;
+  backdrop-filter: blur(1.5px);
 }
 
 nav ul li {
@@ -419,6 +420,7 @@ h2 {
   height: auto;
   margin: 30px;
   border-radius: 25px;
+  backdrop-filter: blur(0.5px);
 }
 
 /* Projects Section*/
@@ -435,6 +437,7 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   background-color: #25313999;
+  backdrop-filter: blur(0.5px);
   border-radius: 25px;
   padding: 25px;
 }
