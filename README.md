@@ -10,4 +10,4 @@ Check it out 👇
 
 # Screenshot 
 
-![Screenshot](https://github.com/Drish-xD/Drish-xD.github.io/blob/main/Assets/Screenshot.png)
+![Screenshot](https://github.com/Drish-xD/Drish-xD.github.io/blob/main/Assets/Images/Screenshot.png)
