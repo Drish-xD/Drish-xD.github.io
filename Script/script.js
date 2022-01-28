@@ -14,12 +14,7 @@ $('.nav-bar a').on('click', function (e) {
 
 // Animations AOS
 
-AOS.init({
-    offset: 100,
-    duration: 1200,
-    once: false,
-    // anchorPlacement: 'center-bottom',
-});
+AOS.init();
 
 // Scrolling Effect nav-bar 
 
