@@ -119,7 +119,7 @@ body {
 }
 
 .content-hidden .fly-in-hello li:nth-child(6) {
-    transform: translate3d(0px, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
 .content-hidden .fly-in-there li:nth-child(1) {
@@ -194,7 +194,7 @@ body {
     }
 
     .fly-in-hello .extraspace {
-        margin: 0 0;
+        margin: 0;
     }
 
     .fly-in-hello .hello-h {
