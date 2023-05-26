@@ -2,17 +2,20 @@
 
 @font-face {
   font-family: "FiraCode";
-  src: url(../Assets/Fonts/firacode-webfont.woff2) format("woff2"), url(../Assets/Fonts/firacode-webfont.woff) format("woff");
+  src: url(../Assets/Fonts/firacode-webfont.woff2) format("woff2"),
+    url(../Assets/Fonts/firacode-webfont.woff) format("woff");
 }
 
 @font-face {
   font-family: "Syne";
-  src: url(../Assets/Fonts/syne-webfont.woff2) format("woff2"), url(../Assets/Fonts/syne-webfont.woff) format("woff");
+  src: url(../Assets/Fonts/syne-webfont.woff2) format("woff2"),
+    url(../Assets/Fonts/syne-webfont.woff) format("woff");
 }
 
 @font-face {
   font-family: "Truculenta";
-  src: url(../Assets/Fonts/truculenta-webfont.woff2) format("woff2"), url(../Assets/Fonts/truculenta-webfont.woff) format("woff");
+  src: url(../Assets/Fonts/truculenta-webfont.woff2) format("woff2"),
+    url(../Assets/Fonts/truculenta-webfont.woff) format("woff");
 }
 
 /* Css querry */
@@ -347,19 +350,27 @@ h2 {
   width: 95%;
 }
 
-.bar .progress-line.bootstrap span {
-  width: 95%;
+.bar .progress-line.Reactjs span {
+  width: 90%;
 }
 
-.bar .progress-line.JS span {
-  width: 60%;
+.bar .progress-line.Nextjs span {
+  width: 80%;
 }
 
 .bar .progress-line.Python span {
   width: 75%;
 }
 
-.bar .progress-line.C span {
+.bar .progress-line.Redux span {
+  width: 75%;
+}
+
+.bar .progress-line.Flutter span {
+  width: 55%;
+}
+
+.bar .progress-line.Native span {
   width: 45%;
 }
 
@@ -367,7 +378,11 @@ h2 {
   width: 25%;
 }
 
-.bar .progress-line.mysql span {
+.bar .progress-line.sql span {
+  width: 85%;
+}
+
+.bar .progress-line.JS span {
   width: 85%;
 }
 
@@ -476,6 +491,7 @@ h2 {
   text-align: justify;
   line-height: 9mm;
   padding: 10px 0;
+  word-break: break-word;
 }
 
 .project:last-child p {
@@ -485,12 +501,11 @@ h2 {
 .project .btn {
   display: flex;
   bottom: 1px;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.project:nth-child(2) .btn,
-.project:last-child .btn {
-  justify-content: center;
+.project:first-child .btn {
+  justify-content: space-between;
 }
 
 .project-section a {
